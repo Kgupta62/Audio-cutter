@@ -13,15 +13,15 @@
     "tailwindcss": "^3.4.3",
     "wavesurfer.js": "^5.2.0",
     "web-vitals": "^1.0.1",
-    "react-scripts": "^5.0.1"  // Moved from devDependencies
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env NODE_ENV=production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "vercel"  // Assuming you're using Vercel deployment
-  }, 
+    "deploy": "vercel"
+  },  
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "webpack": "^5.91.0"
+    "webpack": "^5.91.0",
+    "cross-env": "^7.0.3"  // Added cross-env
   }
 }
