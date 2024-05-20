@@ -12,14 +12,16 @@
     "react-router-dom": "^5.2.0",
     "tailwindcss": "^3.4.3",
     "wavesurfer.js": "^5.2.0",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "react-scripts": "^5.0.1"  // Moved from devDependencies
   },
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
-    "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
-    "eject": "react-scripts eject"
-  },
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "vercel"  // Assuming you're using Vercel deployment
+  }, 
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -39,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1",
     "webpack": "^5.91.0"
   }
 }
