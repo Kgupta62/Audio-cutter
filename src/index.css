@@ -1,0 +1,70 @@
+.waveform-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f84e; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#waveform {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.all-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.controls, .trim {
+  background-color: #6936D3; /* Purple background */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls:hover, .trim:hover {
+  background-color: #531A65; /* Darker shade of purple on hover */
+}
+
+.volume-slider, .zoom-slider {
+  width: 100px;
+  margin-right: 10px;
+  -webkit-appearance: none;
+}
+
+.volume-slider::-webkit-slider-thumb, .zoom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #6936D3; /* Purple thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb:hover, .zoom-slider::-webkit-slider-thumb:hover {
+  background-color: #531A65; /* Darker shade of purple on thumb hover */
+}
+
+.zoom-icon {
+  color: #6936D3; /* Purple icon color */
+  margin-right: 5px;
+}
+
+.trim {
+  background-color: #FF5252; /* Red background */
+}
+
+.trim:hover {
+  background-color: #D32F2F; /* Darker shade of red on hover */
+}
