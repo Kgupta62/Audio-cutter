@@ -17,11 +17,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env NODE_ENV=production react-scripts build",
+    "build": "npx cross-env NODE_ENV=production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "vercel"
-  },  
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -42,6 +42,6 @@
   },
   "devDependencies": {
     "webpack": "^5.91.0",
-    "cross-env": "^7.0.3"  // Added cross-env
+    "cross-env": "^7.0.3"
   }
 }
